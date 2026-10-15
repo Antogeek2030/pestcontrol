@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+---
+<Layout title="Pest Control Blog | Victoria TX Tips & Advice" description="Practical pest control tips for Victoria, TX homeowners. Ants, termites, mosquitoes and more from local experts.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Blog</div>
+      <h1>Pest Control Blog</h1>
+      <p>Tips and advice for keeping Victoria homes pest-free.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+        {posts.map((post) => (
+          <a href={`/blog/${post.slug}/`} class="service-card" style="display:block">
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <span class="service-link">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} →</span>
+          </a>
+        ))}
+      </div>
+      <p style="margin-top:2.5rem;text-align:center">
+        Need help now? <a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a>
+      </p>
+    </div>
+  </section>
+</Layout>

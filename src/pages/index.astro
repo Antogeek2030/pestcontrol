@@ -1,0 +1,267 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+---
+<Layout>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">● VICTORIA &amp; SOUTH TEXAS · SAME-DAY SERVICE</div>
+        <h1>PEST CONTROL<br />IN <span>VICTORIA, TX</span></h1>
+        <p class="hero-sub">Fast Results. Real Protection. Local Experts.</p>
+        <p class="hero-desc">Pests don’t wait — and neither do we. Our licensed technicians eliminate ants, roaches, termites, rodents, mosquitoes and more for homes and businesses across Victoria, TX. Upfront pricing, same-day appointments, and results you can count on.</p>
+        <div class="hero-tags">
+          <span class="hero-tag">⏱ Same-Day Service</span>
+          <span class="hero-tag">🛡 Licensed &amp; Insured</span>
+          <span class="hero-tag">✓ Upfront Pricing</span>
+          <span class="hero-tag">🏠 Residential &amp; Commercial</span>
+          <span class="hero-tag">🌿 Pet-Friendly Options</span>
+        </div>
+        <div class="hero-ctas">
+          <a href={`tel:${phone}`} class="btn btn-primary">Schedule Service</a>
+          <a href={`tel:${phone}`} class="btn btn-outline">Get a Free Quote</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-icon">🐜</div>
+          <h3>Pests in Your Home?</h3>
+          <p>We inspect, treat, and protect — so you can get back to living pest-free the same day in most cases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Victoria Homeowners <span>Choose Us</span></h2>
+        <p>South Texas pests are tough. You need a local team that knows the climate, the common invaders, and how to stop them for good.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Same-Day Response</h3>
+          <p>Most service calls in Victoria are completed the same day you call — no multi-day waits for common pest problems.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>Licensed &amp; Insured</h3>
+          <p>Fully licensed Texas pest control technicians. We follow all state regulations and use proven, effective treatments.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💵</div>
+          <h3>Upfront Pricing</h3>
+          <p>Clear quotes before we start. No hidden fees, no high-pressure upsells — just honest pest control at fair local rates.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📍</div>
+          <h3>Local to Victoria</h3>
+          <p>Based at 2301 E Mockingbird Ln. We know Victoria neighborhoods, common pest pressures, and how Gulf Coast weather affects infestations.</p>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><strong>Same Day</strong><span>Most Appointments</span></div>
+        <div class="stat-item"><strong>100%</strong><span>Satisfaction Focus</span></div>
+        <div class="stat-item"><strong>Local</strong><span>Victoria Based</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems preview -->
+  <section class="section" id="problems">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recognize <span>These Signs?</span></h2>
+        <p>Early action stops small problems from becoming expensive infestations. If you notice any of these, call us.</p>
+      </div>
+      <div class="problems-grid">
+        <a href="/problems/ants-in-kitchen/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-urgent">Urgent</span>
+          <h3>Ants in the Kitchen</h3>
+          <p>Trailing ants mean a colony nearby. We locate the nest and eliminate the source, not just the ones you see.</p>
+        </a>
+        <a href="/problems/roaches-under-sink/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-urgent">Urgent</span>
+          <h3>Roaches Under the Sink</h3>
+          <p>German and American cockroaches thrive in kitchens and bathrooms. Fast treatment prevents rapid spread.</p>
+        </a>
+        <a href="/problems/rodents-in-attic/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-urgent">Urgent</span>
+          <h3>Rodents in the Attic</h3>
+          <p>Scratching at night, droppings, or chewed wires signal mice or rats. We seal entry points and remove them safely.</p>
+        </a>
+        <a href="/problems/wasps-nests/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Address Soon</span>
+          <h3>Wasp Nests</h3>
+          <p>Paper wasps and yellow jackets near doors or play areas are a safety risk. Professional removal is safest.</p>
+        </a>
+        <a href="/problems/fleas-ticks/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Address Soon</span>
+          <h3>Fleas &amp; Ticks</h3>
+          <p>Protect your pets and family. We treat indoor and outdoor areas to break the life cycle.</p>
+        </a>
+        <a href="/problems/mosquitoes-yard/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Address Soon</span>
+          <h3>Mosquitoes in the Yard</h3>
+          <p>Standing water and thick vegetation create breeding sites. Our treatments make outdoor living enjoyable again.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Expert Pest Control <span>Services</span></h2>
+        <p>Targeted treatments for the pests that bother Victoria homes and businesses most.</p>
+      </div>
+      <div class="services-grid">
+        <a href="/services/general-pest-control/" class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>General Pest Control</h3>
+          <p>Ongoing protection plans that keep common crawling and flying pests out of your home year-round.</p>
+          <span class="service-link">Learn More →</span>
+        </a>
+        <a href="/services/ant-control/" class="service-card">
+          <div class="service-icon">🐜</div>
+          <h3>Ant Control</h3>
+          <p>Fire ants, carpenter ants, sugar ants and more. We treat trails, nests and entry points.</p>
+          <span class="service-link">Learn More →</span>
+        </a>
+        <a href="/services/roach-control/" class="service-card">
+          <div class="service-icon">🪳</div>
+          <h3>Roach Control</h3>
+          <p>German, American and oriental cockroaches. Thorough treatment of harborage areas and prevention.</p>
+          <span class="service-link">Learn More →</span>
+        </a>
+        <a href="/services/termite-control/" class="service-card">
+          <div class="service-icon">🪵</div>
+          <h3>Termite Control</h3>
+          <p>Inspections, liquid treatments and bait systems to protect your biggest investment — your home.</p>
+          <span class="service-link">Learn More →</span>
+        </a>
+        <a href="/services/rodent-control/" class="service-card">
+          <div class="service-icon">🐭</div>
+          <h3>Rodent Control</h3>
+          <p>Mice and rats exclusion, trapping and cleanup. We seal the openings they use to get inside.</p>
+          <span class="service-link">Learn More →</span>
+        </a>
+        <a href="/services/mosquito-control/" class="service-card">
+          <div class="service-icon">🦟</div>
+          <h3>Mosquito Control</h3>
+          <p>Yard treatments that reduce mosquito populations so you can enjoy evenings outside again.</p>
+          <span class="service-link">Learn More →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>How We Get <span>Results</span></h2>
+        <p>Simple, transparent process from first call to lasting protection.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <h3>Call or Request Service</h3>
+          <p>Tell us what’s going on. We schedule a convenient time — often same-day for urgent issues.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <h3>Thorough Inspection</h3>
+          <p>We identify the pest, find entry points and harborage, and assess the extent of the problem.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <h3>Clear Treatment Plan</h3>
+          <p>You get a plain-language explanation and upfront pricing before any work begins.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <h3>Effective Treatment</h3>
+          <p>Targeted products applied correctly. We focus on the source, not just the symptoms.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">05</div>
+          <h3>Follow-Up &amp; Prevention</h3>
+          <p>Recommendations to keep pests from returning, plus optional ongoing service plans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="section section-alt" id="location">
+    <div class="container">
+      <div class="section-header">
+        <h2>Find Us in <span>Victoria, TX</span></h2>
+        <p>Proudly serving Victoria and surrounding communities from East Mockingbird Lane.</p>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>📍 2301 E Mockingbird Ln, Victoria, TX 77904</h3>
+          <p>Serving Victoria · Port Lavaca · Cuero · Edna · Goliad · and nearby South Texas towns.</p>
+          <p style="margin-top:1rem"><strong>Hours:</strong> Monday–Saturday 7:00 AM – 7:00 PM. Emergency service available.</p>
+          <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+        </div>
+        <div>
+          <iframe 
+            title="Map of 2301 E Mockingbird Ln, Victoria, TX"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-97.00%2C28.82%2C-96.96%2C28.86&amp;layer=mapnik&amp;marker=28.8405%2C-96.9829"
+            style="border:1px solid var(--border); border-radius:12px; width:100%; height:280px;"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container" style="text-align:center">
+      <h2>Ready for a Pest-Free Home?</h2>
+      <p>Don’t let ants, roaches or rodents take over. Call today for fast, professional pest control in Victoria, TX.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary" style="margin-top:1rem">Call Now — {phoneDisplay}</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pest Control <span>Questions</span></h2>
+        <p>Real answers Victoria homeowners ask most.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>What pests do you treat in Victoria, TX?</h3>
+          <p>We treat ants (including fire ants), cockroaches, termites, rodents (mice &amp; rats), mosquitoes, wasps, spiders, fleas, ticks, and general household pests. If you’re unsure what you’re dealing with, call and we’ll help identify it.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer same-day pest control?</h3>
+          <p>Yes. For most common residential issues we can often schedule same-day or next-day service in the Victoria area.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are your treatments safe for kids and pets?</h3>
+          <p>We use targeted, professional-grade products and follow label directions carefully. We can discuss pet- and family-friendly options and will advise on any temporary precautions after treatment.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer ongoing service plans?</h3>
+          <p>Yes. Quarterly or monthly plans provide year-round protection and are the most effective way to keep pests from returning.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What areas do you serve?</h3>
+          <p>Victoria and surrounding communities including Port Lavaca, Cuero, Edna, Goliad, and nearby towns. Call to confirm service availability for your address.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

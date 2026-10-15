@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+---
+<Layout title="Mosquito Control Victoria TX | Yard Treatments" description="Mosquito control for Victoria, TX yards. Reduce biting insects so you can enjoy your outdoor space again.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Services → Mosquito Control</div>
+      <h1>Mosquito Control in Victoria, TX</h1>
+      <p>Reclaim your backyard. Targeted treatments reduce mosquito populations where you live and play.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <h2>Why Mosquitoes Thrive Here</h2>
+      <p>Warm temperatures, humidity and frequent rain create ideal breeding conditions. Standing water in gutters, bird baths, flower pots and low spots produces new generations quickly.</p>
+      <h2>What We Offer</h2>
+      <ul>
+        <li>Barrier treatments on vegetation where adult mosquitoes rest</li>
+        <li>Attention to common breeding sites on your property</li>
+        <li>Guidance on eliminating standing water</li>
+        <li>Seasonal programs for continuous relief during peak months</li>
+      </ul>
+      <p style="margin-top:2rem;text-align:center"><a href={`tel:${phone}`} class="btn btn-primary">Schedule Mosquito Treatment</a></p>
+    </div>
+  </section>
+</Layout>

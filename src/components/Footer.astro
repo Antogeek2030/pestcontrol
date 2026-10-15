@@ -1,0 +1,42 @@
+---
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Pest Control Victoria TX</h4>
+        <p>Licensed pest control serving Victoria and surrounding South Texas communities. Same-day service, family-owned, proven results against ants, roaches, termites, rodents and more.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p><a href="/services/general-pest-control/">General Pest Control</a></p>
+        <p><a href="/services/ant-control/">Ant Control</a></p>
+        <p><a href="/services/roach-control/">Roach Control</a></p>
+        <p><a href="/services/termite-control/">Termite Control</a></p>
+        <p><a href="/services/rodent-control/">Rodent Control</a></p>
+        <p><a href="/services/mosquito-control/">Mosquito Control</a></p>
+      </div>
+      <div>
+        <h4>Common Problems</h4>
+        <p><a href="/problems/ants-in-kitchen/">Ants in Kitchen</a></p>
+        <p><a href="/problems/roaches-under-sink/">Roaches</a></p>
+        <p><a href="/problems/rodents-in-attic/">Rodents</a></p>
+        <p><a href="/problems/wasps-nests/">Wasps</a></p>
+        <p><a href="/problems/mosquitoes-yard/">Mosquitoes</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href={`tel:${phone}`}>{phoneDisplay}</a></p>
+        <p>2301 E Mockingbird Ln<br />Victoria, TX 77904</p>
+        <p>Mon–Sat 7am–7pm · Emergency available</p>
+        <p style="margin-top:0.75rem"><a href="/service-areas/">Service Areas</a> · <a href="/blog/">Blog</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {year} Pest Control Victoria TX. All rights reserved. | <a href="/privacy/">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>

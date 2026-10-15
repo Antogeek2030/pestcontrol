@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+---
+<Layout title="Contact Us | Pest Control Victoria TX" description="Contact Pest Control Victoria TX for same-day service. Call (361) 555-0199 or visit us at 2301 E Mockingbird Ln.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Contact</div>
+      <h1>Contact Us</h1>
+      <p>Ready for fast, professional pest control? Reach us today.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="content-block">
+          <h2>Get in Touch</h2>
+          <p><strong>Phone:</strong> <a href={`tel:${phone}`}>{phoneDisplay}</a></p>
+          <p><strong>Address:</strong> 2301 E Mockingbird Ln<br />Victoria, TX 77904</p>
+          <p><strong>Hours:</strong> Monday–Saturday 7:00 AM – 7:00 PM<br />Emergency service available</p>
+          <p style="margin-top:1.5rem">Call or text for the fastest response. We serve Victoria and surrounding communities.</p>
+          <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+        </div>
+        <div>
+          <iframe 
+            title="Map of 2301 E Mockingbird Ln, Victoria, TX"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-97.00%2C28.82%2C-96.96%2C28.86&amp;layer=mapnik&amp;marker=28.8405%2C-96.9829"
+            style="border:1px solid var(--border); border-radius:12px; width:100%; height:320px;"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+---
+<Layout title="About Us | Pest Control Victoria TX" description="Local licensed pest control team serving Victoria, TX and surrounding communities. Same-day service, honest pricing, proven results.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → About Us</div>
+      <h1>About Pest Control Victoria TX</h1>
+      <p>Local technicians focused on one thing: keeping Victoria homes and businesses free from pests.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <h2>Who We Are</h2>
+      <p>We are a licensed, insured pest control team based in Victoria, Texas. Our focus is residential and commercial pest management — ants, roaches, termites, rodents, mosquitoes and more. We know the local climate, the common invaders, and the practical steps that deliver lasting results.</p>
+      <h2>How We Work</h2>
+      <ul>
+        <li><strong>Upfront pricing</strong> — Clear estimates before any work begins. No surprise charges.</li>
+        <li><strong>Same-day priority</strong> — Most diagnostic and treatment calls are completed the day you call when scheduling allows.</li>
+        <li><strong>Honest advice</strong> — We recommend what works, not the highest-ticket option.</li>
+        <li><strong>Licensed technicians</strong> — Fully licensed under Texas regulations.</li>
+        <li><strong>Family &amp; pet considerations</strong> — We discuss product choices and any temporary precautions so everyone stays comfortable.</li>
+      </ul>
+      <h2>Our Location</h2>
+      <p>2301 E Mockingbird Ln, Victoria, TX 77904. We serve Victoria, Port Lavaca, Cuero, Edna, Goliad and nearby South Texas communities.</p>
+      <div style="margin-top:2rem;text-align:center"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></div>
+    </div>
+  </section>
+</Layout>

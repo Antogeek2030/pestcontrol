@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+---
+<Layout title="Service Areas | Pest Control Victoria TX" description="Pest control service areas: Victoria, Port Lavaca, Cuero, Edna, Goliad and surrounding South Texas communities.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Service Areas</div>
+      <h1>Service Areas</h1>
+      <p>Local pest control across Victoria and nearby South Texas towns.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <h2>Where We Serve</h2>
+      <p>Based in Victoria, we provide residential and commercial pest control throughout the region, including:</p>
+      <ul>
+        <li>Victoria</li>
+        <li>Port Lavaca</li>
+        <li>Cuero</li>
+        <li>Edna</li>
+        <li>Goliad</li>
+        <li>Surrounding communities in Victoria, Calhoun, DeWitt, Jackson and Goliad counties</li>
+      </ul>
+      <p>Not sure if we cover your address? Call {phoneDisplay} and we’ll confirm quickly.</p>
+      <div style="margin-top:2rem;text-align:center"><a href={`tel:${phone}`} class="btn btn-primary">Call to Confirm Service</a></div>
+    </div>
+  </section>
+</Layout>

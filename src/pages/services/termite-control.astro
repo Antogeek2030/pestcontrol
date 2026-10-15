@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+---
+<Layout title="Termite Control Victoria TX | Inspection & Treatment" description="Termite inspection and treatment in Victoria, TX. Protect your home from subterranean termites with professional liquid and bait options.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Services → Termite Control</div>
+      <h1>Termite Control in Victoria, TX</h1>
+      <p>Protect the structure of your home. Termites cause silent, expensive damage.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <h2>Termite Pressure in South Texas</h2>
+      <p>Subterranean termites are active across the Victoria area. Moisture, soil contact and wood-to-ground connections create opportunities for colonies to reach your home.</p>
+      <h2>Our Termite Services</h2>
+      <ul>
+        <li>Detailed inspections looking for mud tubes, damaged wood and conducive conditions</li>
+        <li>Liquid soil treatments that create a continuous barrier</li>
+        <li>Bait systems for monitoring and colony elimination</li>
+        <li>Recommendations for moisture control and wood-to-soil separation</li>
+        <li>Clear reports so you understand findings and options</li>
+      </ul>
+      <p style="margin-top:2rem;text-align:center"><a href={`tel:${phone}`} class="btn btn-primary">Request Termite Inspection</a></p>
+    </div>
+  </section>
+</Layout>

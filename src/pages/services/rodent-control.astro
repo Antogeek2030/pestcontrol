@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13615550199';
+const phoneDisplay = '(361) 555-0199';
+---
+<Layout title="Rodent Control Victoria TX | Mice & Rat Removal" description="Professional rodent control in Victoria, TX. Mice and rats removed, entry points sealed, and your home protected from re-infestation.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Services → Rodent Control</div>
+      <h1>Rodent Control in Victoria, TX</h1>
+      <p>Stop the scratching, droppings and health risks. We remove rodents and close their entry points.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <h2>Signs You Have Rodents</h2>
+      <p>Nighttime scratching in walls or attic, droppings, gnaw marks, grease rubs along baseboards, or a strong ammonia-like odor all point to mice or rats.</p>
+      <h2>Our Approach</h2>
+      <ul>
+        <li>Inspection to find active runways and entry points</li>
+        <li>Trapping or baiting appropriate to the situation</li>
+        <li>Exclusion work — sealing gaps around pipes, vents, eaves and foundation</li>
+        <li>Advice on sanitation and storage that reduces attraction</li>
+        <li>Follow-up to confirm activity has stopped</li>
+      </ul>
+      <p style="margin-top:2rem;text-align:center"><a href={`tel:${phone}`} class="btn btn-primary">Get Rodent Help Now</a></p>
+    </div>
+  </section>
+</Layout>
